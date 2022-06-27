@@ -2,7 +2,7 @@
 
 ## Solution
 
-This challenge proposes to predict the 20 most likely Stack Overflow users to answer a question. In my understanding, our goal is to predict users for new questions, not suggesting users for questions that already has been asked.
+This challenge proposes to predict the 20 most likely Stack Overflow users to answer a question. In my understanding, our goal is to predict users for new questions, not suggesting users for questions that have been asked already.
 
 In that sense, we will split the dataset into a train, validation and test dataset. The train set will be used to fit models, while we will run our users predictions for questions from the validation set. The test set will be left untouched to evaluate a final model. 
 
