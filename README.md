@@ -54,7 +54,7 @@ Create data folders
 mkdir -p data/inputs data/intermediary data/results
 ```
 
-Download [input data](https://drive.google.com/file/d/1CUcfl3JX8TNYABn2JRIPQozT0oqdqqOy/view) and place the zip file in `data/input`, then unzip it:
+Download [input data](https://drive.google.com/file/d/1CUcfl3JX8TNYABn2JRIPQozT0oqdqqOy/view) and place the zip file in `data/inputs`, then unzip it:
 on OSX, run
 ```
 cd data/inputs && unzip ml_challenge.zip && cd ../..
