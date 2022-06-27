@@ -16,15 +16,15 @@ Instead, we will leverage content-based approaches, by focusing on questions tit
 
 This repository contains the notebooks of different approaches to solve the challenge, along with an introductory exploration data analysis (EDA). The notebooks content is organised as follow:
 1. EDA
-2. Baseline 1: Question and Users Embeddings
-3. Baseline 2: ANN & Candidate Users Ranking
-4. Baseline 3. TF-IDF Embeddings & Candidate Users Ranking
+2. Baseline 1: Question and Users Embeddings ⚠️ without using precompute embeddings, the notebook will take long to execute (~1h30)
+3. Baseline 2: ANN & Candidate Users Ranking ⚠️ without using precompute embeddings, the notebook will take long to execute (~1h)
+4. Baseline 3. TF-IDF Embeddings & Candidate Users Ranking 🟢 fast embeddings
 
 ### `data`
 
 The data folder contains the following subfolders:
 - `inputs` for raw json inputs that you need to download and unzip from the [original challenge repository](https://github.com/algolia/ML-challenge).
-- `intermediary` for precompute embeddings.
+- `intermediary` for precompute embeddings that you can optionally download from [my google drive](https://drive.google.com/drive/folders/1H2vRzdrCJNiuiSxXDHbQGe-aYkuriC3r?usp=sharing) for a significant compute speed-up.
 - `results` for results of different approaches.
 
 ### `src`
@@ -41,7 +41,7 @@ Various utils to reduce the amount of code from notebook and offer consistent me
 
 Download this repository
 ```shell
-git@github.com:Vincent-Maladiere/Algolia-ML-challenge-solution.git
+git clone git@github.com:Vincent-Maladiere/Algolia-ML-challenge-solution.git
 ```
 
 Create a python environment and source it
@@ -54,15 +54,18 @@ Create data folders
 mkdir -p data/inputs data/intermediary data/results
 ```
 
-Install requirements
-```
-pip install -r requirements.txt
-```
-
-Download data and place the zip file in `data/input`, then unzip it:
+Download [input data](https://drive.google.com/file/d/1CUcfl3JX8TNYABn2JRIPQozT0oqdqqOy/view) and place the zip file in `data/input`, then unzip it:
 on OSX, run
 ```
 cd data/inputs && unzip ml_challenge.zip && cd ../..
+```
+
+[Optional] download [embeddings precompute data](https://drive.google.com/drive/folders/1H2vRzdrCJNiuiSxXDHbQGe-aYkuriC3r?usp=sharing) and place the 2 pickle files in `data/intermediary`
+
+
+Install requirements
+```
+pip install -r requirements.txt
 ```
 
 Finally, open a notebook by running:
