@@ -12,7 +12,7 @@ Instead, we will leverage content-based approaches, by focusing on questions tit
 
 ## Content
 
-### `notebook`
+### `notebooks`
 
 This repository contains the notebooks of different approaches to solve the challenge, along with an introductory exploration data analysis (EDA). The notebooks content is organised as follow:
 1. EDA
