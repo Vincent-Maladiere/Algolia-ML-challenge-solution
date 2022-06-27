@@ -29,24 +29,29 @@ The data folder contains the following subfolders:
 
 ### `src`
 
-Various utils methods to diminish the amount of code from notebook and offer consistent methods. It also contains the BERT embedder model used accross different approaches.
+Various utils to reduce the amount of code from notebook and offer consistent methods. It also contains the BERT embedder model used accross different approaches.
 
 
 ## Setup
 
 ### Requirements
-- >= python 3.7
+- python 3.7 and higher
 
 ### Launching a notebook
 
-Create a python environment
+Download this repository
+```shell
+git@github.com:Vincent-Maladiere/Algolia-ML-challenge-solution.git
+```
+
+Create a python environment and source it
 ```shell
 python -m venv venv && source venv/bin/activate
 ```
 
 Create data folders
 ```
-mkdir data/inputs data/results
+mkdir -p data/inputs data/intermediary data/results
 ```
 
 Install requirements
